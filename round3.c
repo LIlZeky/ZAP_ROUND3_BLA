@@ -157,4 +157,25 @@ int longest_row(const int rows, const int cols, char array[rows][cols]) {
     return max_index;
 }
 
+int min_2d(const int size, int array[][size]) 
+{ 
+    if (array == NULL) 
+    { 
+        return -1; 
+    } 
+    int minimal = 1000993434; 
+    for (int i = 0; i < size; i++) 
+    { 
+        for (int j = 0; j < size; j++) 
+        { 
+            if (array[i][j] < minimal) 
+            { 
+                minimal = array[i][j]; 
+            } 
+        } 
+    } 
+ 
+    return minimal; 
+}
+
 
